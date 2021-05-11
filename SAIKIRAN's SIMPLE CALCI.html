@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body bgcolor=azure>
+<h2> <b> <font color=green> ------ Sample Application by Saikiran Vaddarapu ------ </font></b></h2> 
+<h4> BI-OPERATIONAL CALCI </h4>
+<br>
+<!--img src="C:\Users\vadda\OneDrive\Documents\JAVA SCRIPT (js)\CALCI.png" /img -->
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUxo8CMIMAC0BrwkpXiiDNHHcDHyZUKB4ugw&usqp=CAU" /img>
+<br>
+<br>
+<button type="button" onclick=dof(); > Click me to enter two values </button>
+<br>
+<p> YOUR OUTPUT </p>
+<p id="ol"> ______ </p>
+<br>
+<script>
+var a;
+var b;
+var c;
+var r;
+var s;
+function dof(){
+a= parseInt(prompt("Enter first value : "));
+b= parseInt(prompt("Enter second value : "));
+c= parseInt(prompt("Enter 1 to add/2 to sub : "));
+if(c==1){
+r=(a+b);
+s=a+"+"+b+" = ";
+}
+else{
+r=(a-b);
+s=a+"-"+b+" = ";
+}
+document.getElementById("ol").innerHTML=s+r;
+}
+</script>
+</body>
+</html>
